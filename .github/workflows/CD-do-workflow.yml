@@ -1,0 +1,34 @@
+name: Main deployment
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  web-deploy:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 14.17.3
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.17.3
+    - name: Installing dependecies
+      run: npm install
+    - name: Running production build
+      run: npm run build -- --prod
+    - name: 📂 Deploying to production server
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ${{ secrets.NAMECHEAP_SERVER}}
+        username: ${{ secrets.NAMECHEAP_USER}}
+        password: ${{ secrets.NAMECHEAP_PASSWORD}}
+        protocol: ftps
+        security: strict
+        local-dir: "dist/"
+        server-dir: "desafio-dev-frontend.kaila.co.ao/"
