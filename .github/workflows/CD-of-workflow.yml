@@ -20,14 +20,14 @@ jobs:
         node-version: 14.17.3
     - name: Installing dependecies
       run: npm install
-    - name: Running production build
+    - name: Running production build :sparkles
       run: npm run build -- --prod
     - name: 📂 Deploying to production server
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ${{ secrets.NAMECHEAP_SERVER}}
-        username: ${{ secrets.NAMECHEAP_USER}}
-        password: ${{ secrets.NAMECHEAP_PASSWORD}}
+        server: ${{ secrets._SERVER_HOST}}
+        username: ${{ secrets._SERVER_USERNAME}}
+        password: ${{ secrets._SERVER_PASSWORD}}
         protocol: ftps
         security: strict
         local-dir: "dist/"
