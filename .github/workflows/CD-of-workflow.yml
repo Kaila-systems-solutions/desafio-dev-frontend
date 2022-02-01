@@ -21,7 +21,7 @@ jobs:
     - name: Installing dependecies
       run: npm install
     - name: Running production build :sparkles
-      run: npm run build -- --prod
+      run: npm run build
     - name: 📂 Deploying to production server
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
