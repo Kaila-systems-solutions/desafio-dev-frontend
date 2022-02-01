@@ -1,48 +1,34 @@
-# 🕸️ Desafio de programação - Front-End 🚩
+## Desafio Feito
 
-**Este teste tem por objetivos principais avaliar:**
-
-- Habilidades no desenvolvimento frontend
-- Conceitos de UI e UX aplicados
-
-Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, porém normalmente você não deve precisar de mais do que algumas horas
-****
-
-# Instruções de entrega do desafio
-
-1. Primeiro , sugira o tema que vai desenvolver ao seu contacto @kaila <img style="width:25px;height:20px" src="https://avatars.githubusercontent.com/u/88585385?s=200&v=4" /> e o tempo que levará para desenvolver
-1. EM seguida, faça um fork deste projeto para sua conta no Github (crie uma se você não possuir).
-2.  implemente o projeto tal qual descrito abaixo, em seu clone local.
-3. Por fim, envie via email o projeto ou o fork/link do projeto para seu contato @Kaila com cópia para geral@kaila.co.ao.
-
-****
-
-## Desafio 🚀 🚀 🚀
+Bem, devido ao tempo estabelecido, não pode implementar o consumo da API porque teria que fazer ela em nodejs e isso está fora do meu foco que é Front End neste desafio. Peço que compreendem este facto. Obriago!
 
 
-O desafio consiste em criar um projeto com o design/tema  a sua escolha
+# ECommerce
 
-**Requisitos esperados na entrega do teste**
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
-- [ ] Usar a tecnologia sugerida pelo seu contacto @Kaila-systems-solutions para frontend
-- [ ] Consumir uma api
+## Development server
 
-****
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Pontos principais
+## Code scaffolding
 
-- Clean code
-- Conhecimento de boas práticas / design patterns
-- Demonstração de boa gestão do estado do app
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-****
+## Build
 
-## Pontos extras
-- Testes
-- Componetização do app
-****
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
-Att.: É importante executar como sugerido nas instruções
-
-Este desafio foi baseado neste outro desafio: ByCodersTec/desafio-frontend
